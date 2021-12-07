@@ -5,6 +5,14 @@ Go example showing how to use [sqlx](https://github.com/jmoiron/sqlx) with Postg
 ## Prerequisites
 
 - a running PostgreSQL server
+- a database and a user:
+```sql
+CREATE DATABASE some_database;
+CREATE USER some_user WITH ENCRYPTED PASSWORD 'some_password';
+GRANT ALL PRIVILEGES ON DATABASE some_database TO some_user;
+```
+:bulb: No need to create the schema as it will be created during the very first run (if it doesn't exist already).
+
 - values in the .env file must match the ones PostgreSQL ones:
 ```console
 DB_DRIVER=pgx
