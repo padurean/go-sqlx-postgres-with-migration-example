@@ -1,6 +1,7 @@
 # go-sqlx-postgres-with-migration-example
 
-Go example showing how to use sqlx with PostgreSQL and a very simple way to do database migrations
+Go example showing how to use [sqlx](https://github.com/jmoiron/sqlx) with PostgreSQL and a very simple way to do database migrations
+#golang
 
 ## Prerequisites
 
